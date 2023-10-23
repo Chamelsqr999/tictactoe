@@ -22,7 +22,7 @@ body {
 .game {
   width: 1170px;
   max-width: calc(100% - 48px);
-  height: 500px;
+  height: 570px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,6 +44,8 @@ body {
   text-align: center;
   line-height: 2;
   font-size: 3rem;
+  padding: 10px;
+  box-shadow: 5px 5px 10px 5px lightgray; 
 }
 
 .X {
@@ -51,7 +53,7 @@ body {
 }
 
 .O {
-  color: blue;
+  color: lawngreen;
 }
 
 .square {
@@ -61,16 +63,16 @@ body {
   font-size: 4.4rem;
   font-weight: bold;
   line-height: 34px;
-  height: 114px;
+  height: 154px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 114px;
+  width: 154px;
 }
 
 .winning-square {
-  background-color: yellow;
+  background-color: yellowgreen;
   color: #fff;
 }
 
@@ -88,10 +90,20 @@ body {
 
 .game-info .btn button {
   font-size: 2.2rem;
+  background-color: lightsalmon;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 0px lightsalmon; 
 }
 
 .game-info button {
   font-size: 1.7rem;
+  background-color: lightsalmon;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 0px lightsalmon; 
 }
 
 .game-info li {
