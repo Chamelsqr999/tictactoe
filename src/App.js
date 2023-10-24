@@ -3,7 +3,7 @@ import { useState } from "react";
 function Square({ value, onSquareClick, isWinningSquare }) {
   const className = "square" + (isWinningSquare ? " winning" : "");
 
-  const style = isWinningSquare ? { backgroundColor: "#ff0" } : null;
+  const style = isWinningSquare ? { backgroundColor: "green" } : null;
 
   return (
     <button className={className} onClick={onSquareClick} style={style}>
@@ -39,7 +39,6 @@ function Board({ xIsNext, squares, onPlay, currentMove }) {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
 
-  // use two loops to generate the squares
   const boardSize = Math.sqrt(squares.length);
   let board = [];
   for (let i = 0; i < boardSize; i++) {
